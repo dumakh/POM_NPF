@@ -38,7 +38,7 @@ class BasePage:
             return False
         return True
 
-    """будет ждать до тех пор, пока элемент не исчезнет"""
+    """Будет ждать до тех пор, пока элемент не исчезнет"""
     def is_disappeared(self, how, what, timeout=4):
         try:
             WebDriverWait(self.driver, timeout, 1, TimeoutException). \
@@ -47,7 +47,7 @@ class BasePage:
             return False
         return True
 
-    """упадет, как только увидит искомый элемент, элемент не появился: успех, тест зеленый"""
+    """Упадет, как только увидит искомый элемент. Элемент не появился: успех, тест зеленый"""
     def is_not_element_present(self, how, what, timeout=4):
         try:
             WebDriverWait(self.driver, timeout).until(EC.presence_of_element_located((how, what)))
