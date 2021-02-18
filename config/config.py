@@ -5,7 +5,7 @@ class TestData:
     USER_NAME = "realm1user1"
     PASSWORD = "realm1user1pwd"
     LOGIN_PAGE_TITLE = "Sign in to realm1"
-    HOME_PAGE_TITLE = "Container"
+    WIDGET_PAGE_TITLE = "Container"
     FL_HEADER = "Физические лица"
     IP_HEADER = "Индивидуальные предприниматели"
     UL_HEADER = "Юридические лица"

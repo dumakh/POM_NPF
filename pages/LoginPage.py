@@ -1,8 +1,7 @@
 from pages.BasePage import BasePage
 from config.config import TestData
 from locators.LoginLocators import LoginPageLocators
-from pages.HomePage import HomePage
-
+from pages.WidgetPage import WidgetPage
 class LoginPage(BasePage):
 
     """constructor of the page class"""
@@ -25,4 +24,4 @@ class LoginPage(BasePage):
         self.do_send_keys(LoginPageLocators.USERNAME, username)
         self.do_send_keys(LoginPageLocators.PASSWORD, password)
         self.do_click(LoginPageLocators.LOGIN_BUTTON)
-        return HomePage(self.driver)
+        return WidgetPage(self.driver)
